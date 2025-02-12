@@ -34,3 +34,26 @@ might help with the notation for mathematical expressions.
 It recursivly calls mystery function 3 times dividing n by 3 for each of the times giving us $3T(n/3)$. Then the first loop runs 
 $n^2$  times, the second loop runs n times, and the third loop runs $n^2$  times. This gives us a total of $n^5$ times. Therefor
 the recurrence relation would be $T(n) = 1$  for $n \le 1$  and $T(n) = 3T(n/3) + n^5$  for $n > 1$.
+
+Solution to the recurrence relation:
+
+$T(n) = 3T(n/3) + n^5$
+
+$T(n) = 3(3T(n/9) + n^5/3^5) + n^5$  $= 9T(n/9) + n^5/3^4 + n^5$
+
+$T(n) = 3^iT(n/3^i) + \sum_{k=0}^i n^5/3^4k$
+
+Using $i = log_3(n)$  as a substitution for i:
+
+$T(n) = nT(1) + n^5 \sum_{k=0}^i 1/3^4k$
+
+That sum is a simple geometric series that simplifies to $1/(1-1/3^4)$ which is $80/81$ which is a constant.
+
+$T(n) = nT(1) + 80/81 * n^5$
+
+We ignore the lower order terms
+
+$T(n) \in O(n^5)$
+
+
+
