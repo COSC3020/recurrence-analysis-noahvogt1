@@ -31,6 +31,6 @@ Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-It recursivly calls mystery function 3 times dividing n by 3 for each of the times giving us 3T(n/3). Then the first loop runs 
+It recursivly calls mystery function 3 times dividing n by 3 for each of the times giving us $3T(n/3)$. Then the first loop runs 
 $n^2$  times, the second loop runs n times, and the third loop runs $n^2$  times. This gives us a total of $n^5$ times. Therefor
 the recurrence relation would be $T(n) = 1$  for $n \le 1$  and $T(n) = 3T(n/3) + n^5$  for $n > 1$.
