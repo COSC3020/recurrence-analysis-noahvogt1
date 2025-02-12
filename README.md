@@ -1,4 +1,7 @@
 # Recurrence Analysis -- Mystery Function
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+I used the internet to help remember how to solve that summation. It just popped up how to do it in the google thing answer.
 
 Analyze the running time of the following recursive procedure as a function of
 $n$ and find a tight big $O$ bound on the runtime for the function. You may
